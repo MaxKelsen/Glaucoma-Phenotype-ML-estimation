@@ -1,0 +1,25 @@
+package:
+  name: glaucoma
+  version: "0.0.1"
+
+source:
+  git_url: https://github.com/MaxKelsen/Glaucoma-Phenotype-ML-estimation
+
+build:
+  script: "python -m pip install -e . --no-deps -vv"
+
+requirements:
+  host:
+    - python>=3.7
+    - pip
+    - setuptools
+
+  run:
+    - python>=3.7
+    - pip
+    - numpy
+    - pandas
+
+about:
+  home: https://github.com/MaxKelsen/Glaucoma-Phenotype-ML-estimation
+  description: Investigate whether ML can be used to grade VCDR of eye images, corresponding to likelihood of glaucoma.
